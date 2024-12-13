@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Profile Cards</h1>
+    <div class="cards" id="cards">
+   
+      <div class="card">
+        <img src="img/avatar.svg" alt="Profile Icon">
+        <h3>John Doe</h3>
+        <p>CEO & Founder</p>
+        <p>Oxford University</p>
+        <div class="icons">
+          <img src="img/icon1.svg" alt="">
+          <img src="img/icon2.svg">
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="card">
+        <img src="img/avatar.svg" alt="Profile Icon">
+        <h3>Jane Smith</h3>
+        <p>Designer</p>
+        <p>Harvard University</p>
+        <div class="icons">
+          <img src="img/icon1.svg" alt="Instagram">
+          <img src="img/icon2.svg" alt="Telegram">
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="card">
+        <img src="img/avatar.svg" alt="Profile Icon">
+        <h3>Michael Lee</h3>
+        <p>Engineer</p>
+        <p>MIT</p>
+        <div class="icons">
+          <img src="img/icon1.svg" alt="Instagram">
+          <img src="img/icon2.svg" alt="Telegram">
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="card">
+        <img src="img/avatar.svg" alt="Profile Icon">
+        <h3>Emily Davis</h3>
+        <p>Developer</p>
+        <p>Stanford University</p>
+        <div class="icons">
+          <img src="img/icon1.svg" alt="Instagram">
+          <img src="img/icon2.svg" alt="Telegram">
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+    </div>
+    <button class="create-btn" onclick="openModal()">Create</button>
+  </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Add New Profile</h2>
+      <input required type="text" id="name" placeholder="Name..." />
+      <input required type="text" id="profession" placeholder="Profession..." />
+      <input required type="text" id="university" placeholder="University..." />
+      <button class="post-btn" onclick="addCard()">Post</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
